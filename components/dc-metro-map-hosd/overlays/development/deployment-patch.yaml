@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-hosd
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/karthik-jk-tenant/dc-metro-map-1/dc-metro-map-hosd@sha256:d052558df5ea6630ec81958b90d112cba671d81124d1f4a593ab111bc096c586
+        name: container-image
+        resources: {}
+status: {}
